@@ -1,0 +1,215 @@
+{
+    "description": "(Glyph 1) caps_lock -> on, caps_lock, esc, control+[ -> off",
+    "manipulators": [
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+
+                    ],
+                    "type": "frontmost_application_unless"
+                },
+                {
+                    "name": "glyph_mode",
+                    "type": "variable_unless",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "caps_lock" },
+            "parameters": {
+                "basic.to_if_alone_threshold_milliseconds": 0,
+                "basic.to_if_held_down_threshold_milliseconds": 100
+            },
+            "to_after_key_up": [
+                {
+                    "set_variable": {
+                        "name": "glyph_mode",
+                        "value": 0
+                    }
+                }
+            ],
+            "to_if_alone": [
+                {
+                    "set_variable": {
+                        "name": "glyph_mode",
+                        "value": 1
+                    }
+                },
+                {
+                    "halt": true,
+                    "set_notification_message": {
+                        "id": "glyph_mode_plus_enabled",
+                        "text": "Glyph Mode Enabled!"
+                    }
+                }
+            ],
+            "to_if_held_down": [
+                {
+                    "set_variable": {
+                        "name": "glyph_mode",
+                        "value": 1
+                    }
+                },
+                {
+                    "set_notification_message": {
+                        "id": "glyph_mode_plus_enabled",
+                        "text": "NORMAL - glyph Mode Enabled"
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+
+                    ],
+                    "type": "frontmost_application_unless"
+                },
+                {
+                    "name": "glyph_mode",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "caps_lock" },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "glyph_mode",
+                        "value": 0
+                    }
+                },
+                {
+                    "set_notification_message": {
+                        "id": "glyph_mode_plus_enabled",
+                        "text": ""
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+
+                    ],
+                    "type": "frontmost_application_unless"
+                },
+                {
+                    "name": "glyph_mode",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "key_code": "escape" },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "glyph_mode",
+                        "value": 0
+                    }
+                },
+                {
+                    "set_notification_message": {
+                        "id": "glyph_mode_plus_enabled",
+                        "text": ""
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+
+                    ],
+                    "type": "frontmost_application_unless"
+                },
+                {
+                    "name": "glyph_mode",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "key_code": "open_bracket",
+                "modifiers": { "mandatory": ["control"] }
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "glyph_mode",
+                        "value": 0
+                    }
+                },
+                {
+                    "set_notification_message": {
+                        "id": "glyph_mode_plus_enabled",
+                        "text": ""
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+
+                    ],
+                    "type": "frontmost_application_if"
+                },
+                {
+                    "name": "glyph_mode",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "any": "key_code" },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "glyph_mode",
+                        "value": 0
+                    }
+                },
+                {
+                    "set_notification_message": {
+                        "id": "glyph_mode_plus_enabled",
+                        "text": ""
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "glyph_mode",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": { "any": "pointing_button" },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "glyph_mode",
+                        "value": 0
+                    }
+                },
+                {
+                    "set_notification_message": {
+                        "id": "glyph_mode_plus_enabled",
+                        "text": ""
+                    }
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
