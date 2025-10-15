@@ -4,10 +4,10 @@
 
 A Karabiner-Elements layer that gives you some vim-flavored navigation anywhere in OS-X. It also has a press-and-hold **select** mode for easy text selection. To use: copy the text in JSON files Glyph 1, Glyph 2, Glyph 3, and Glyph 4 that are posted here one at a time, and then paste them into Karabiner by going to Settings --> Complex Modifications --> 'add your own rules' and pasting them into the pop-up. Once enabled, hit capslock to move around and then capslock to leave the navigation. "Glyph Mode activated!" should appear in the lower right of your screen if it triggers.
 
-This was inspired **heavily** by the hard work done by **karabiner-vim-mode-plus** (if you want vim system-wide on your OS-X environment, go here for Vim Mode Plus: [GitHub](https://github.com/jonasdiemer/karabiner-vim-mode-plus))
+This was inspired **heavily** by the hard work done by **karabiner-vim-mode-plus** (if you want vim system-wide on your OS-X environment, go here for Vim Mode Plus: [GitHub](https://github.com/jonasdiemer/karabiner-vim-mode-plus)).
 
 ## 1) What you get with Glyph:
-- **Navigation layer**: hit 'capslock' and IJKL moves your around and it works system-wide.
+- **Navigation layer**: hit 'capslock' and IJKL moves your cursor around in your app of choice.
 - **Hold-to-select**: hold `d` to select as you move (think of it as the DEFINE key)
 - **Cut/Paste** helpers: `s` = SCOOP (cut), `f` = FILL (paste).
 - **Paragraph/line smart jumps** for writers.
@@ -57,6 +57,7 @@ These are simple helpers wired in your block:
 | `s` | Scoop (cut, or ⌘X) |
 | `f` | Fill (paste or ⌘V) |
 
+[![image](https://github.com/tobiasbuckell/glyph/blob/main/glyph-keyboard-layer.jpg)](https://github.com/tobiasbuckell/glyph/blob/main/glyph-keyboard-layer.jpg)
 
 ## 5) Setup & usage
 
@@ -87,7 +88,6 @@ These are simple helpers wired in your block:
 - Additionally, I wanted the visual nature of the keyboard layout to be a little easier to learn. I'm not a coder, I'm ADHD, and the size of the list and concepts needed to memorize vim as I was learning it were daunting and often got in the way and tripped me up while writing. But my gaming instincts for IJKL are hard, hardwired. The moment I mapped IJKL and a leading key to motion, I was off and running.
 - Over time I've fiddled a bit, and then came up with holding the 'd' key as a shift key. Combining simple motion with a held down key to select made sense and was quick for muscle memory to adapt to.
 - The movement keys also have a hierarchy that I found easier to memorize. Paragraph navigation occurs on the higher row with 'u' and 'o' keys, then word navigation on the home layer with 'j' and 'l' keys, and then you drop down a keyboard row for character navigation with 'm' and '.' You drop your fingers down as you get more defined in what you are moving or selecting (on an ortholinear keyboard this is a *very* smooth motion).
-- This is a huge readme, but all you need to do is get the JSON pasted into Karabiner, 4 JSON files that need cut and pasted into 4 'add your own rules' entry areas. Then turn it on and hit capslock to move around, capslock to leave the navigation.
 - Why capslock? When was the last time you used it? It's a big, easy to hit key that, unless we're in some specialized industry, we only hit once or twice a year. Doing literally anything else with a capslock key is more useful.
 
 ### Credits / Inspiration
