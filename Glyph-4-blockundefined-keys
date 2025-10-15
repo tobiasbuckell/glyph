@@ -1,0 +1,26 @@
+{
+    "description": "(Glyph 4): Block all undefined keys (put *below* the Glyph rules)",
+    "manipulators": [
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+
+                    ],
+                    "type": "frontmost_application_unless"
+                },
+                {
+                    "name": "glyph_mode",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "from": {
+                "any": "key_code",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "key_code": "vk_none" }],
+            "type": "basic"
+        }
+    ]
+}
