@@ -71,7 +71,6 @@ These are simple helpers wired in your block:
     - Tap the direction keys above to move.
     - **Hold `d`** and press movement keys to select.
     - Use `s` to strike (cut), `f` to fill (paste).
-5. 
 
 ## 6) Tips & notes
 
@@ -81,6 +80,7 @@ These are simple helpers wired in your block:
 - **Paragraph behavior**: macOS defines “paragraph” by blank-line boundaries and some text system rules. If a paragraph jump feels off in certain apps, that’s the app’s text system—not your mapping.
 - **Line behavior**: macOS defines 'start of the line' differently than an author and just jumps to the left of the screen. I'm working on how to get it to jump by sentences, but haven't gotten a solution I like.
 - **Order of rules**: if you maintain multiple complex modifications, keep your Glyph Mode rules together and (if needed) above app-specific overrides—(for example, I keep my custom Colemak layout at the bottom of the Karabiner Complex Modifications list of rules). Make sure the 'no undefined keys' rule at the bottom of the Glyph rules and above your custom rules.
+- **Start small**: just get used to hitting capslock and moving around with your IJKL keys as first, and then move to using the 'd' key to mark text. The Z,X,C,V keys all work the way they do when you hit Apple or CTRL plus Z,X,C,V, so they should be easy to adapt to using to manipulate text.
 
 ## 7) Troubleshooting
 - **Selection doesn’t happen**: remember selection only occurs when **holding `d`**.
