@@ -61,12 +61,12 @@ These are simple helpers wired in your block:
 
 1. **Install Karabiner-Elements** https://karabiner-elements.pqrs.org
 2. **Add the JSON** to _Karabiner-Elements → Complex Modifications_ and then click 'Add your own rule'
-3. 
-4. Ensure whatever rule toggles `glyph_mode = 1` is enabled (e.g., your Caps-Lock toggle rule or modal trigger).
-5. Test:
+3. **Paste in JSON** from the 4 JSON files here 4 times to add 4 rules of your own
+4. **Test**:
     - Tap the direction keys above to move.
     - **Hold `d`** and press movement keys to select.
-    - Use `s` to cut, `f` to paste.
+    - Use `s` to strike (cut), `f` to fill (paste).
+5. 
 
 ## 6) Tips & notes
 
