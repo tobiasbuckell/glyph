@@ -47,7 +47,6 @@ We have a few additional “writer’s jumps”—use them if you like:
 |`p`|Paragraph up|⌥↑|⌥⇧↑|
 |`/`|Paragraph down|⌥↓|⌥⇧↓|
 
----
 
 ## 4) Editing commands
 These are simple helpers wired in your block:
