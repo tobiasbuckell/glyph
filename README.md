@@ -2,32 +2,31 @@
 
 [![image](https://github.com/tobiasbuckell/glyph/blob/main/glyph-keyboard-layer.jpg)](https://github.com/tobiasbuckell/glyph/blob/main/glyph-keyboard-layer.jpg)
 
-A Karabiner-Elements layer that gives you fast, Vim-flavored navigation anywhere on macOS—plus a press-and-hold **select** mode for easy text selection. Copy the text in JSON files Glyph 1, Glyph 2, Glyph 3, and Glyph 4 posted here one at a time, and then paste them into Karabiner by going to Settings --> Complex Modifications --> 'add your own rules' and pasting them. Then enable them and hit capslock to move around, capslock to leave the navigation. "Glyph Mode activated!" should appear in the lower right of your screen if it triggers.
+A Karabiner-Elements layer that gives you some vim-flavored navigation anywhere in OS-X. It also has a press-and-hold **select** mode for easy text selection. To use: copy the text in JSON files Glyph 1, Glyph 2, Glyph 3, and Glyph 4 that are posted here one at a time, and then paste them into Karabiner by going to Settings --> Complex Modifications --> 'add your own rules' and pasting them into the pop-up. Once enabled, hit capslock to move around and then capslock to leave the navigation. "Glyph Mode activated!" should appear in the lower right of your screen if it triggers.
 
-This was inspired **heavily** by the hard work done by **karabiner-vim-mode-plus** (in case you want VIM system-wide on your Mac): [GitHub](https://github.com/jonasdiemer/karabiner-vim-mode-plus).
+This was inspired **heavily** by the hard work done by **karabiner-vim-mode-plus** (if you want vim system-wide on your OS-X environment, go here for Vim Mode Plus: [GitHub](https://github.com/jonasdiemer/karabiner-vim-mode-plus))
 
-## 1) What you get
+## 1) What you get with Glyph:
 - **Navigation layer**: hit 'capslock' and IJKL moves your around and it works system-wide.
 - **Hold-to-select**: hold `d` to select as you move (think of it as the DEFINE key)
 - **Cut/Paste** helpers: `s` = SCOOP (cut), `f` = FILL (paste).
 - **Paragraph/line smart jumps** for writers.
 - **Hit capslock or escape again** to go back to your normal keyboard typing.
 
-
 ## 2) Modes
 
 ### 2.1 Glyph Mode (navigation layer)
-Glyph Mode is active by tapping "capslock." While active:
-- **Move normally** with the keys below.
-- **Hold `d`** to enter _Select Mode_ (adds ⇧ to your moves).
-- Release `d` to stop selecting.
+Glyph Mode is activated by tapping "capslock." When active:
+- **Move normally** with the keys listed below.
+- **Hold `d`** to 'define' the text and enter Select Mode (adds SHIFT to your moves).
+- **Release** `d` to stop selecting, use 's' to 'scoop' up text, or 'f' to fill in text.
 
 ### 2.2 Select Mode (hold `d`)
 While **holding `d`** (for Define), movement keys include **Shift** so text becomes selected as you move (e.g., ← becomes ⇧←, ⌥↑ becomes ⌥⇧↑, etc.).
 
 ## 3) Keymap (Glyph Mode)
 
-> The table shows **normal move** on the left and the **selecting variant** (hold `d`) on the right.
+> The table shows **the key pressed** when in Glyph mode on the left and what it does normally, and what it does when you hold `d` on the right.
 
 | You press | Action                 | Normal move | Hold `d` (Select) |
 | --------- | ---------------------- | ----------- | ----------------- |
@@ -43,7 +42,7 @@ While **holding `d`** (for Define), movement keys include **Shift** so text 
 | `l`       | **Word-right**         | ⌥→          | ⌥⇧→               |
 
 ### Extra motions available in the block (optional)
-We have a few additional “writer’s jumps”—use them if you like:
+In addition you can move or select to the start or end of the whole document:
 
 |Key|Action|Normal|Select|
 |---|---|---|---|
@@ -62,8 +61,8 @@ These are simple helpers wired in your block:
 ## 5) Setup & usage
 
 1. **Install Karabiner-Elements** https://karabiner-elements.pqrs.org
-2. **Add the JSON** to _Karabiner-Elements → Complex Modifications_ and then click 'Add your own rule'
-3. **Paste in JSON** from the 4 JSON files here 4 times to add 4 rules of your own
+2. **Add the JSON** via _Karabiner-Elements → Complex Modifications_ and clickin 'Add your own rule.'
+3. **Paste in JSON** from the 4 JSON files here, copy and paste them 4 times using 'add to add 4 rules of your own.
 4. **Test**:
     - Tap the direction keys above to move.
     - **Hold `d`** and press movement keys to select.
@@ -93,4 +92,4 @@ These are simple helpers wired in your block:
 
 ### Credits / Inspiration
 - **karabiner-vim-mode-plus** [GitHub](https://github.com/jonasdiemer/karabiner-vim-mode-plus)
-    
+- **Hyper IJKL** [Github](https://github.com/RomanYuldashev/HyperIJKL)
