@@ -1,5 +1,5 @@
 {
-    "description": "Glyph 1: Tap caps_lock to toggle on/off, or use esc to turn off",
+    "description": "(Glyph 1): Tap caps_lock to toggle on/off, or use esc to turn off",
     "manipulators": [
         {
             "conditions": [
