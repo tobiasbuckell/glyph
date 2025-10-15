@@ -1,4 +1,4 @@
-# Glyph: Keyboard-first Editing for Authors
+# Glyph: Keyboard-first editing for authors/non-programmer writers
 
 [![image](https://github.com/tobiasbuckell/glyph/blob/main/glyph-keyboard-layer.jpg)](https://github.com/tobiasbuckell/glyph/blob/main/glyph-keyboard-layer.jpg)
 
