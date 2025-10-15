@@ -2,11 +2,11 @@
 A Karabiner-Elements layer that gives you fast, Vim-flavored navigation anywhere on macOS—plus a press-and-hold **select** mode for easy text selection. This was inspired heavily by the hard work done by **karabiner-vim-mode-plus** (in case you want VIM system-wide on your Mac): [GitHub](https://github.com/jonasdiemer/karabiner-vim-mode-plus).
 
 ## 1) What you get
-- **Navigation layer**: IJKL moves your around and it works system-wide (not just in editors).
+- **Navigation layer**: hit 'capslock' and IJKL moves your around and it works system-wide.
 - **Hold-to-select**: hold `d` to select as you move (think of it as the DEFINE key)
 - **Cut/Paste** helpers: `s` = SCOOP (cut), `f` = FILL (paste).
 - **Paragraph/line smart jumps** for writers.
-
+- **Hit capslock or escape again** to go back to your normal keyboard typing.
 
 
 ## 2) Modes
@@ -87,6 +87,7 @@ These are simple helpers wired in your block:
 - Over time I've fiddled a bit, and then came up with holding the 'd' key as a shift key. Combining simple motion with a held down key to select made sense and was quick for muscle memory to adapt to.
 - The movement keys also have a hierarchy that I found easier to memorize. Paragraph navigation occurs on the higher row with 'u' and 'o' keys, then word navigation on the home layer with 'j' and 'l' keys, and then you drop down a keyboard row for character navigation with 'm' and '.' You drop your fingers down as you get more defined in what you are moving or selecting (on an ortholinear keyboard this is a *very* smooth motion).
 - This is a huge readme, but all you need to do is get the JSON pasted into Karabiner, 4 JSON files that need cut and pasted into 4 'add your own rules' entry areas. Then turn it on and hit capslock to move around, capslock to leave the navigation.
+- Why capslock? When was the last time you used it? It's a big, easy to hit key that, unless we're in some specialized industry, we only hit once or twice a year. Doing literally anything else with a capslock key is more useful.
 
 ### Credits / Inspiration
 - **karabiner-vim-mode-plus** [GitHub](https://github.com/jonasdiemer/karabiner-vim-mode-plus)
