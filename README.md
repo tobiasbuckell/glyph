@@ -1,4 +1,4 @@
-# Glyph: Keyboard-first Editing for Author
+# Glyph: Keyboard-first Editing for Authors
 A Karabiner-Elements layer that gives you fast, Vim-flavored navigation anywhere on macOS—plus a press-and-hold **select** mode for easy text selection. This was inspired heavily by the hard work done by **karabiner-vim-mode-plus** (in case you want VIM system-wide on your Mac): [GitHub](https://github.com/jonasdiemer/karabiner-vim-mode-plus).
 
 ## 1) What you get
