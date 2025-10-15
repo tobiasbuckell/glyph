@@ -1,4 +1,7 @@
 # Glyph: Keyboard-first Editing for Authors
+
+[![image](https://github.com/tobiasbuckell/glyph/blob/main/glyph-keyboard-layer.jpg)](https://github.com/tobiasbuckell/glyph/blob/main/glyph-keyboard-layer.jpg)
+
 A Karabiner-Elements layer that gives you fast, Vim-flavored navigation anywhere on macOS—plus a press-and-hold **select** mode for easy text selection. Copy the text in JSON files Glyph 1, Glyph 2, Glyph 3, and Glyph 4 posted here one at a time, and then paste them into Karabiner by going to Settings --> Complex Modifications --> 'add your own rules' and pasting them. Then enable them and hit capslock to move around, capslock to leave the navigation. "Glyph Mode activated!" should appear in the lower right of your screen if it triggers.
 
 This was inspired **heavily** by the hard work done by **karabiner-vim-mode-plus** (in case you want VIM system-wide on your Mac): [GitHub](https://github.com/jonasdiemer/karabiner-vim-mode-plus).
