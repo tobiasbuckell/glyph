@@ -94,3 +94,4 @@ These are simple helpers wired in your block:
 ### Credits / Inspiration
 - **karabiner-vim-mode-plus** [GitHub](https://github.com/jonasdiemer/karabiner-vim-mode-plus)
 - **Hyper IJKL** [Github](https://github.com/RomanYuldashev/HyperIJKL)
+- **Keyboard layout image** created at [MagicTypist](https://new.magictypist.com)
