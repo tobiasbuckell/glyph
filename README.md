@@ -1,7 +1,7 @@
 # Glyph: Keyboard-first editing for authors/non-programmer writers
 
 [![image](https://github.com/tobiasbuckell/glyph/blob/main/glyph-keyboard-layer.jpg)](https://github.com/tobiasbuckell/glyph/blob/main/glyph-keyboard-layer.jpg)
-*(image created by https://new.magictypist.com keyboard layouts)
+*(image created by https://new.magictypist.com keyboard layouts)*
 
 A Karabiner-Elements layer that gives you some vim-flavored navigation anywhere in OS-X. It also has a press-and-hold **select** mode for easy text selection. To use: copy the text in JSON files Glyph 1, Glyph 2, Glyph 3, and Glyph 4 that are posted here one at a time, and then paste them into Karabiner by going to Settings --> Complex Modifications --> 'add your own rules' and pasting them into the pop-up. Once enabled, hit capslock to move around and then capslock to leave the navigation. "Glyph Mode activated!" should appear in the lower right of your screen if it triggers.
 
