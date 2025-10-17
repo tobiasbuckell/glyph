@@ -1,0 +1,105 @@
+{
+    "description": "(Glyph 1.1 'vm' variant): Use index fingers curled down (QWERTY V+M) together to toggle on/off to give pinky finger a break",
+    "manipulators": [
+        {
+            "conditions": [
+                {
+                    "name": "glyph_mode",
+                    "type": "variable_unless",
+                    "value": 1
+                }
+            ],
+            "description": "D+H taps: toggle glyph mode ON",
+            "from": {
+                "simultaneous": [
+                    { "key_code": "v" },
+                    { "key_code": "m" }
+                ],
+                "simultaneous_options": {
+                    "detect_key_down_uninterruptedly": true,
+                    "key_down_order": "insensitive",
+                    "key_up_order": "insensitive",
+                    "key_up_when": "any"
+                }
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "glyph_mode",
+                        "value": 1
+                    }
+                },
+                {
+                    "set_notification_message": {
+                        "id": "glyph_mode_notification",
+                        "text": "Glyph Mode ON"
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "glyph_mode",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "description": "D+H taps: toggle glyph mode OFF",
+            "from": {
+                "simultaneous": [
+                    { "key_code": "v" },
+                    { "key_code": "m" }
+                ],
+                "simultaneous_options": {
+                    "detect_key_down_uninterruptedly": true,
+                    "key_down_order": "insensitive",
+                    "key_up_order": "insensitive",
+                    "key_up_when": "any"
+                }
+            },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "glyph_mode",
+                        "value": 0
+                    }
+                },
+                {
+                    "set_notification_message": {
+                        "id": "glyph_mode_notification",
+                        "text": ""
+                    }
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "conditions": [
+                {
+                    "name": "glyph_mode",
+                    "type": "variable_if",
+                    "value": 1
+                }
+            ],
+            "description": "Escape: turn off glyph mode",
+            "from": { "key_code": "escape" },
+            "to": [
+                {
+                    "set_variable": {
+                        "name": "glyph_mode",
+                        "value": 0
+                    }
+                },
+                {
+                    "set_notification_message": {
+                        "id": "glyph_mode_notification",
+                        "text": ""
+                    }
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
